@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="kk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Олжас & Дильмира" />
+	<meta property="og:description" content="Сіздерді үйлену тойымызға арналған ақ дастарханға шақырамыз!" />
+	<meta property="og:image" content="https://silhaut.github.io/olzhas-dilmira-wedding/assets/img/preview.jpg" />
+	<title>Олжас & Дильмира Үйлену той</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>💍</text></svg>">
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+	<main class="scroll-container">
+		
+		<section class="header-section">
+			<div>
+				<h1 style="margin-top: 16px; font-size: 64px;">Олжас & <br> Дильмира</h1>
+				<h3 style="font-size: 40    px; padding-bottom: 12px;">Үйлену той</h3>
+			</div>
+			<div class="player-button">
+				<div class="rotating-text">
+					<svg viewBox="0 0 100 100" class="circular-text">
+						<defs>
+							<path id="circle" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" />
+						</defs>
+						<text font-size="10" fill="#333">
+							<textPath href="#circle">Олжас & Дильмира &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Үйлену той &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •</textPath>
+						</text>
+					</svg>
+				</div>
+				<button id="togglePlayPause">
+					<i class="bi bi-play"></i>
+				</button>
+			</div>
+		
+		</section>
+		
+		<section class="snap-section">
+			<div class="content">
+				<h3 class="" style="padding-bottom: 12px;">Құрметті қонақтар!</h3>
+				<p class="text-base">Сіздерді балаларымыз<br>Олжас пен Дильмираның<br>үйлену тойына арналған салтанатты ақ дастарханымызға шақырамыз!</p>
+			</div>
+		</section>
+		
+		<section class="snap-section">
+			<div class="content">
+				<h3 class="" style="padding-bottom: 12px;">Той салтанаты:</h3>
+				<p class="text-base ">16 тамыз, 2025 жыл</p>
+				<div style="width: 300px; text-align: center">
+					<img src="assets/img/calendar.jpg" alt="calendar" class="" style="width: 100%; height: auto;">
+				</div>
+				<p class="text-base">Уақыты - 13:00</p>
+			</div>
+		</section>
+		
+		<section class="snap-section">
+			<div class="content">
+				<h3 class="" style="text-align: center; padding-bottom: 12px;">Мекенжайымыз:</h3>
+				<p class="" style="text-align: center; font-family: 'Roboto Light', sans-serif; color: #2c3e50">Қарағанды қаласы, <br>Инкарбаева 2Б көшесі, <br><b>Ариста рестораны</b>, <br>Yлкен зал</p>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d587.7619819836993!2d73.13020304625374!3d49.79150745978591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42434773b0d3acb5%3A0x128fc9669724e2b2!2sArista!5e0!3m2!1sru!2sus!4v1744473999755!5m2!1sru!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+		
+		<section class="snap-section">
+			<div class="content">
+				<h3 class="" style="padding-bottom: 36px;">Той иелері:</h3>
+				<p class="text-base ">Дархан - Гульмира</p>
+				<h5 style="padding: 36px 0;">Қуанышымызға ортақ болыңыздар!</h5>
+			</div>
+		</section>
+		
+		<section class="snap-section">
+			<div class="content" style="padding-bottom: 36px;">
+				<h6 class="text-base" style="font-size: 24px">Төмендегі форманы толтырып,
+					тойға растауыңызды сұраймыз:
+				</h6>
+				<h5>Тойға келесіз бе?</h5>
+				<form id="rsvpForm" class="" onsubmit="handleSubmit(event)">
+					<label for="fullName" style="font-family: 'Roboto Light', sans-serif">Толық аты-жөніңізді жазыңыз:</label>
+					<input type="text" id="fullName" name="fullName" class="input-label" placeholder="Аты-жөніңіз" required>
+					<div style="display: block; justify-content: start">
+						<div style="margin-bottom: 16px;">
+							<input type="radio" id="yes" name="coming" value="yes" required>
+							<label for="yes" style="font-family: 'Roboto Light', sans-serif">Әрине, келемін</label>
+						</div>
+						<div>
+							<input type="radio" id="no" name="coming" value="no" required>
+							<label for="no" style="font-family: 'Roboto Light', sans-serif">Өкінішке орай, келе алмаймын</label>
+						</div>
+					</div>
+					<div id="submitArea">
+						<button type="submit">Жіберу</button>
+					</div>
+				</form>
+				
+				<h5 style="font-size: 32px; padding-bottom: 24px;">Келіңіздер,
+					тойымыздың қадірлі қонағы болыңыздар!</h5>
+			</div>
+		</section>
+	</main>
+	<audio id="audio" src="assets/music/Мирас%20Жугунусов%20%20-%20Жолдама.mp3"></audio>
+	
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+</body>
+</html>
