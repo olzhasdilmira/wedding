@@ -109,7 +109,7 @@ h5 {
 }
 
 label {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .mb {
@@ -127,7 +127,7 @@ label {
     margin: 16px 0;
     width: 100%;
     display: block;
-    padding: 12px 24px;
+    padding: 8px 16px;
     border-radius: 15px;
 }
 
@@ -138,8 +138,8 @@ button {
     border: none;
     border-radius: 15px;
     color: white;
-    padding: 12px 24px;
-    font-size: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
 }
 
 .dialog {
@@ -151,8 +151,7 @@ button {
     width: 140px;
     height: 140px;
     overflow: hidden;
-    /*bottom: 20%;*/
-    top: 5%;
+    bottom: 7%;
     left: 60%;
 }
 
