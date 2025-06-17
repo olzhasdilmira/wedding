@@ -74,6 +74,7 @@ html, body {
 }
 
 .content {
+    min-width: 330px;
     max-width: 500px;
 }
 
